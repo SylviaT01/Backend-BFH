@@ -1,0 +1,2 @@
+# Ignore SQLite database in the database folder
+backend-biashara-first/hospital_locator.db
