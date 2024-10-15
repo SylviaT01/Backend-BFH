@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/ronoh/Documents/Backend-BFH/backend-biashara-first/venv"
+VIRTUAL_ENV="/home/ronoh/Documents/WebGIS/Biashara-First-Healthcare/backend-biashara-first/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
