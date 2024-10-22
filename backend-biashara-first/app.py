@@ -8,8 +8,7 @@ import os
 app = Flask(__name__)
 
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hospital_locator.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'sqlite:///hospital_locator.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'hospital-l.cviaq8umirdb.us-east-1.rds.amazonaws.com:3306/hospital_locator.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
