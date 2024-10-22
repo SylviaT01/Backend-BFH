@@ -1,8 +1,8 @@
-"""Add columns to business model
+"""Initial migration
 
-Revision ID: f0673b310d2c
+Revision ID: 8bb2999ff209
 Revises: 
-Create Date: 2024-10-15 10:39:50.695141
+Create Date: 2024-10-22 18:45:04.935769
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'f0673b310d2c'
+revision = '8bb2999ff209'
 down_revision = None
 branch_labels = None
 depends_on = None
