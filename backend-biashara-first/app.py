@@ -11,7 +11,6 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'mysql+pymysql://admin:Hosi-1234G@hospital-l.cviaq8umirdb.us-east-1.rds.amazonaws.com:3306/biashara_first_db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-
 db.init_app(app)
 migrate = Migrate(app, db)
 CORS(app)
