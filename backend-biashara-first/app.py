@@ -8,7 +8,8 @@ import os
 app = Flask(__name__)
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'mysql+pymysql://admin:sylvia-1234G@hospital-locator.c9c0g60c0maj.us-east-1.rds.amazonaws.com:3306/biashara_first_db')
+# app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', 'mysql+pymysql://admin:sylvia-1234G@hospital-locator.c9c0g60c0maj.us-east-1.rds.amazonaws.com:3306/biashara_first_db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hospital_locator.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
